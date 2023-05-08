@@ -1,0 +1,77 @@
+-- create database Test1;
+-- create table rgm(id int primary key not null, sname varchar(20),cname varchar(10), 
+-- rsession varchar(10),contact_no int ,address varchar(20)); 
+
+-- insert into rgm values(501,"kasturi","rgm","python",868807,"Nandyal");
+-- insert into rgm values(502,"pavithra","svne","java",868807,"Tirupathi");
+-- insert into rgm values(503,"jyothi","gprse","mysql",978805,"kurnool");
+-- insert into rgm values(504,"preethi","srec","js",875785,"Nandyal");
+-- insert into rgm values(505,"alefa","narayana","c++",688078,"Kurnool");
+
+-- insert into rgm values(506,"ravi","intel","diploma",563428,"anathapur");
+-- insert into rgm values(507,"amar","svne","civils",432178,"hyd");
+-- insert into rgm values(508,"janu","rgm","c++",498538,"hyd");
+-- insert into rgm values(59,"sai","gprse","python",764219,"Tirupathi");
+-- insert into rgm values(510,"chintu","chaitanya","java",632119,"ananthapur");
+
+   select * from rgm;
+-- update rgm set id = 509 where id = 59;
+
+-- create table student(id int primary key not null,sname varchar(20),marks int);
+-- insert into student values(401,"jyothi",90);
+-- insert into student values(402,"pavi",85);
+-- insert into student values(403,"kavi",68);
+-- insert into student values(404,"bhavani",74);
+-- insert into student values(405,"nandhini",76);
+
+-- insert into student values(406,"ravi",40);
+-- insert into student values(407,"kiran",53);
+-- insert into student values(408,"pallavi",59);
+-- insert into student values(409,"prathap",67);
+-- insert into student values(410,"vidya",95);
+-- select *from student;
+
+-- select *from student where marks=95;
+-- select *from student where marks < 95;
+-- select *from student where marks<49;
+-- select id from student where marks >= 85;
+
+-- select id, sname from student where marks >= 40 and marks <= 85;
+-- select *from student where marks != 74;
+-- select *from student where marks <> 74;
+-- select *from student where marks != 74;
+-- select *from student where not marks = 74;
+
+
+-- select *from student where marks between 40 and 85;
+-- select *from student where marks between 40 and 85 order by marks ;
+
+-- select *from student where marks between 40 and 85 order by marks ASC;
+-- select *from student where marks between 40 and 85 order by sname asc;
+
+-- select distinct sname from rgm;
+-- select count(distinct address) from rgm;
+-- select *from student limit 3;
+-- select *from rgm where address = "ananthapur" limit 3;
+
+-- select count(address),address from rgm group by address;
+-- select *from rgm;
+
+-- select *from rgm where cname = "rgm" order by id desc limit 4;
+create table dob(date_ date not null);
+insert into dob values("2002-10-28");
+insert into dob values("2003-04-29");
+insert into dob values("2010-06-18");
+
+select *from dob;
+
+create table salesman(salesman_id int primary key not null ,name varchar(20), city varchar(20), commission float);
+insert into salesman values(5001,"james","New yark",0.15);
+insert into salesman values(5002,"nail","paris",0.13);
+insert into salesman values(5005,"pit","londan",0.11);
+insert into salesman values(5006,"paul","paris",0.14);
+insert into salesman values(5007,"lauson","rome",0.13);
+insert into salesman values(5003,"mc","san jose",0.12);
+
+select *from salesman;
+select name, commission from salesman;
