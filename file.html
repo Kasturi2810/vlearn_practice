@@ -1,0 +1,83 @@
+
+<!-- snippet -->
+<!-- shift+! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        h3{
+            color: red;
+            text-shadow: 2px 2px yellow;
+        }
+    </style>
+   
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <!-- Styling provide in 3 ways 1.inline style 2.style tag in head 3.external css style -->
+    <!-- inline styles by using style Attribute -->
+    <div class="header">
+    <h3 >My Portfolio</h3>
+    <h4>All the information is true and clear information</h4>
+    </div>
+<div class="container">
+    <div id="education">
+    <h3>Education Details</h3>
+    <ul type="square">
+        <li>ZPH school 10th in 2017-2018</li>
+        <li>SRICHAITANYA college 12h in 2018-2020</li>
+        <li>RGMCET college B.Tech(CSE) in 2020-2024</li>
+    </ul>
+    </div>
+  
+    <div class="acomplishments">
+        <h3>acomplishment Details</h3>
+        <ul type="square">
+            <li>i got 5 star in python</li>
+            <li>i earn goldbage in hackerrank</li>
+            <li>i selected RDT for 6 years free education </li>
+        </ul>
+    </div>
+
+    <div class="internships">
+        <h3>Internship Details</h3>
+        <ul type="square">
+            <li>i did internship on fullstack</li>
+            <li>i get offer from Hero Vierd for doing internship on sql</li>
+                
+        </ul>
+    </div>
+</div>
+
+
+<div class="input" style="background-color: lightgray;">
+    <label for="num1">
+        <h4>Enter Your Number: <input type ="number" name = "contact" id="num1"> </h4>
+    </label>
+    <br>
+    <label for="em1">
+        <h4>Enter Your Email: <input type ="email" name = "Email" id="em1"> </h4>
+    </label>
+</div>
+<div class="details">
+<h4> Select Query: </h4>
+<label for="name">
+    <input type ="radio" name = "query" id = "name">education
+    <input type ="radio" name = "query"id = "name">accomplishments
+    <input type ="radio" name = "query" id="name"> interships
+</label>
+<br><br>
+<h4>Select Gender:</h4>
+<select name="gender">
+    <option val="Female">Female</option>
+    <option val="male">Male</option>
+</select>
+
+</div> 
+   
+</body>
+</html>
+
